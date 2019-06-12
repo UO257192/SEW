@@ -33,32 +33,35 @@ class AjaxCreacion{
         var huevo= document.formulario.huevo.value;
         var user= $("#nUsuario").text();
         var nombre = user +" - " + nombreAmborgesa;
-		//instanciamos el objetoAjax
-        var ajax = this.objetoAjax();
-		//Abrimos una conexión AJAX pasando como parámetros el método de envío, y el archivo que realizará las operaciones deseadas
-		ajax.open("POST", "PHP/Crear.php", true);
-		//cuando el objeto XMLHttpRequest cambia de estado, la función se inicia
-		ajax.onreadystatechange = function() {
-
-             //Cuando se completa la petición, mostrará los resultados
-			if (ajax.readyState == 4){
-			}
-		}
-		//Llamamos al método setRequestHeader indicando que los datos a enviarse están codificados como un formulario.
-		ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-        ajax.send("&nombreAmborgesa="+ nombre + 
-        "&pan=" + pan +
-        "&carne=" + carne + 
-        "&lechuga=" + lechuga +
-        "&tomate=" + tomate +  
-        "&salsa=" + salsa + 
-        "&bacon=" +bacon +
-        "&cebolla=" + cebolla+
-        "&pepinillos=" +pepinillos+
-        "&guacamole=" +guacamole+
-        "&queso=" +queso+
-        "&huevo=" +huevo+"&user=" +user);
-        alert("Se ha guardado correctamente");
+        if(nombreAmborgesa==""){
+            alert("La Amborgesa deberia tener un nombre");
+        }else{
+            //instanciamos el objetoAjax
+            var ajax = this.objetoAjax();
+            //Abrimos una conexión AJAX pasando como parámetros el método de envío, y el archivo que realizará las operaciones deseadas
+            ajax.open("POST", "PHP/Crear.php", true);
+            //cuando el objeto XMLHttpRequest cambia de estado, la función se inicia
+            ajax.onreadystatechange = function() {
+                //Cuando se completa la petición, mostrará los resultados
+                if (ajax.readyState == 4){
+                    alert("Se ha guardado correctamente");
+                }
+            }
+            //Llamamos al método setRequestHeader indicando que los datos a enviarse están codificados como un formulario.
+            ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            ajax.send("&nombreAmborgesa="+ nombre + 
+            "&pan=" + pan +
+            "&carne=" + carne + 
+            "&lechuga=" + lechuga +
+            "&tomate=" + tomate +  
+            "&salsa=" + salsa + 
+            "&bacon=" +bacon +
+            "&cebolla=" + cebolla+
+            "&pepinillos=" +pepinillos+
+            "&guacamole=" +guacamole+
+            "&queso=" +queso+
+            "&huevo=" +huevo+"&user=" +user);
+        } 
     }
 }
 var creacion = new AjaxCreacion();

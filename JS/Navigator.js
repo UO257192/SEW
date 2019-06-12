@@ -10,7 +10,7 @@ class Navigator{
         $("#div1").hide();
         $("#user").show();
         $("#map").hide();
-        document.getElementById('aux').innerHTML = "<button class='atras' onclick='nav.login()'>Cerrar Sesion</button>";
+        document.getElementById('aux').innerHTML = "<button class='atras' onclick='nav.login();carta.cargarCarta();carrito.resetearCarrito()'>Cerrar Sesion</button>";
 		$("#aux").show();
     }
     carta(){

@@ -65,11 +65,14 @@ class Carrito{
         document.getElementById("div1").innerHTML = factura;
         $("#map").hide();
         $("#aux").hide();
+        this.resetearCarrito();
+    }
+
+    resetearCarrito(){
         this.listaNombres = [];
         this.listaPrecio = [];
         this.precio = 0.0;
         this.pelicula = "";
-        
     }
 }
 var carrito = new Carrito();

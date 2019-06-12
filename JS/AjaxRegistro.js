@@ -35,9 +35,9 @@ class AjaxRegistro{
 			if (ajax.readyState == 4){
 
                 if(ajax.responseText === "Rellene los campos correctamente." ){
-                    document.getElementById('aux').innerHTML = "<div class='signform'><h2>Rellene los campos correctamente.</h2> <h3>Registrate</h3><div class='form'><form name='formularioRegistro' onsubmit='registroajax.enviarDatos(); return false'  class='login-form' ><input type='text' name='nombre' placeholder='Nombre'/><input type='text' name='apellidos' placeholder='Apellidos'/><input type='text' name='usuario' placeholder='Nombre de usuario'/><input type='text' name='dni' placeholder='DNI'/><input type='password' name='pass1' placeholder='Contraseña'/><input type='password' name='pass2' placeholder='Confirmar contraseña'/><input class='subbt' type='submit' value='Registrarse'/></form><button id='iniciose' onclick='nav.login()'>¿Ya tienes cuenta? Inicia sesion aqui.</button></div></div>";
+                    alert(ajax.responseText);
                 }else if(ajax.responseText === "Las contraseñas no coinciden."){
-                    document.getElementById('aux').innerHTML = "<div class='signform'><h2>Las contraseñas no coinciden.</h2> <h3>Registrate</h3><div class='form'><form name='formularioRegistro' onsubmit='registroajax.enviarDatos(); return false'  class='login-form' ><input type='text' name='nombre' placeholder='Nombre'/><input type='text' name='apellidos' placeholder='Apellidos'/><input type='text' name='usuario' placeholder='Nombre de usuario'/><input type='text' name='dni' placeholder='DNI'/><input type='password' name='pass1' placeholder='Contraseña'/><input type='password' name='pass2' placeholder='Confirmar contraseña'/><input class='subbt' type='submit' value='Registrarse'/></form><button id='iniciose' onclick='nav.login()'>¿Ya tienes cuenta? Inicia sesion aqui.</button></div></div>";
+                    alert(ajax.responseText);
                 }else{
                     $("#div1").show();
 					$("#aux").hide();
@@ -50,7 +50,6 @@ class AjaxRegistro{
 		//Llamamos al método setRequestHeader indicando que los datos a enviarse están codificados como un formulario.
         ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 		 ajax.send("&name="+ nombre + "&apellidos="+ apellidos+ "&usuario="+ usuario+ "&dni="+ dni+ "&pass1="+ pass1+ "&pass2="+ pass2); 
-		 alert("&nombre="+ nombre + "&apellidos="+ apellidos+ "&usuario="+ usuario+ "&dni="+ dni+ "&pass1="+ pass1+ "&pass2="+ pass2); 
     }
 }
 var registroajax = new AjaxRegistro();

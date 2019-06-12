@@ -17,8 +17,14 @@ class Peliculas {
                         method: 'GET',
                         success: function(datos){
                             stringDatos += "<div class='peli'>";
-                            stringDatos += "<img src=" +datos.Poster+" alt= " +datos.Title+"  >";
-                            stringDatos += "<button onclick='carrito.addPelicula(&#34;"+datos.Title+"&#34;);mapa.cargarMapa();nav.mostrarMapa()'>" + datos.Title+" - "+ datos.imdbRating+"/10</button>";
+                            var titulo = datos.Title;
+                            titulo.split(" ");
+                            var tituloFinal="";
+                            for (let index = 0; index < titulo.length; index++) {
+                                tituloFinal += " " + titulo[index];
+                            }
+                            stringDatos += "<img src=" +datos.Poster+" alt=" +tituloFinal+">";
+                            stringDatos += "<button onclick='carrito.addPelicula(&#34;"+titulo.toString()+"&#34;);mapa.cargarMapa();nav.mostrarMapa()'>" + titulo.toString()+" - "+ datos.imdbRating+"/10</button>";
                             stringDatos += "</div>";
                             document.getElementById("div1").innerHTML=stringDatos;
                             document.getElementById("aux").innerHTML="<button class='atras' onclick='carrito.mostrar()'>Atrás</button>";

@@ -31,9 +31,9 @@ class AjaxInicioSesion{
              //Cuando se completa la petición, mostrará los resultados
 			if (ajax.readyState == 4){
                 if(ajax.responseText === "Datos incorrectos." ){
-                    document.getElementById('aux').innerHTML = "<div class='signform'><h2>Datos incorrectos</h2><h3>Iniciar sesión</h3><div class='form'><form name='formularioSesion' onsubmit='inicioajax.enviarDatos(); return false' class='login-form' ><input type='text' name='prueba1' placeholder='Nombre de usuario'/><input type='password' name='prueba2' placeholder='Contraseña'/><input class='subbt' type='submit' value='Iniciar sesión'></input></form><button id='registro' onclick='nav.registro()'>¿No tienes cuenta? Registrate aqui.</button></div></div>";
+                    alert(ajax.responseText);
                 }else if(ajax.responseText == "Rellene los campos correctamente."){
-                    document.getElementById('aux').innerHTML = "<div class='signform'><h2>Rellene los campos correctamente</h2><h3>Iniciar sesión</h3><div class='form'><form name='formularioSesion' onsubmit='inicioajax.enviarDatos(); return false' class='login-form' ><input type='text' name='prueba1' placeholder='Nombre de usuario'/><input type='password' name='prueba2' placeholder='Contraseña'/><input class='subbt' type='submit' value='Iniciar sesión'></input></form><button id='registro' onclick='nav.registro()'>¿No tienes cuenta? Registrate aqui.</button></div></div>";
+                    alert(ajax.responseText);
                 }else{
 					$("#div1").show();
 					$("#aux").hide();
