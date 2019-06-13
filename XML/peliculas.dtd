@@ -1,0 +1,13 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT peliculas (pelicula)+>
+<!ATTLIST peliculas
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pelicula (codigo)>
+<!ATTLIST pelicula
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT codigo (#PCDATA)>
+<!ATTLIST codigo
+  xmlns CDATA #FIXED ''>

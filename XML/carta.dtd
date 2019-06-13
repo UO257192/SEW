@@ -1,0 +1,62 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT carta (hamburguesa)+>
+<!ATTLIST carta
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT hamburguesa (nombre,pan,tipocarne,queso,lechuga,tomate,bacon,
+                       cebolla,pepinillos,guacamole,huevo,salsa,precio)>
+<!ATTLIST hamburguesa
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pan (#PCDATA)>
+<!ATTLIST pan
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tipocarne (#PCDATA)>
+<!ATTLIST tipocarne
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT queso (#PCDATA)>
+<!ATTLIST queso
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT lechuga (#PCDATA)>
+<!ATTLIST lechuga
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT tomate (#PCDATA)>
+<!ATTLIST tomate
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT bacon (#PCDATA)>
+<!ATTLIST bacon
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT cebolla (#PCDATA)>
+<!ATTLIST cebolla
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pepinillos (#PCDATA)>
+<!ATTLIST pepinillos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT guacamole (#PCDATA)>
+<!ATTLIST guacamole
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT huevo (#PCDATA)>
+<!ATTLIST huevo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT salsa (#PCDATA)>
+<!ATTLIST salsa
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+  xmlns CDATA #FIXED ''>

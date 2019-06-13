@@ -1,0 +1,92 @@
+<carta>
+    <hamburguesa>
+        <nombre>Hurricane</nombre>
+        <pan>Pan de semillas</pan>
+        <tipocarne>pollo a la plancha</tipocarne>
+        <queso>cheddar</queso>
+        <lechuga>Si</lechuga>
+        <tomate>Si</tomate>
+        <bacon>No</bacon>
+        <cebolla>caramelizada</cebolla>
+        <pepinillos>No</pepinillos>
+        <guacamole>No</guacamole>
+        <huevo>Si</huevo>
+        <salsa>mayonesa</salsa>
+        <precio>15.5</precio>
+    </hamburguesa>
+    <hamburguesa>
+        <nombre>Orlando Bloom</nombre>
+        <pan>Pan rustico</pan>
+        <tipocarne>ternera</tipocarne>
+        <queso>americano</queso>
+        <lechuga>No</lechuga>
+        <tomate>Si</tomate>
+        <bacon>Si</bacon>
+        <cebolla>cruda</cebolla>
+        <pepinillos>Si</pepinillos>
+        <guacamole>Si</guacamole>
+        <huevo>No</huevo>
+        <salsa>barbacoa</salsa>
+        <precio>14</precio>
+    </hamburguesa>
+    <hamburguesa>
+        <nombre>Oasis</nombre>
+        <pan>Pan de cristal</pan>
+        <tipocarne>pulled pork</tipocarne>
+        <queso>americano</queso>
+        <lechuga>Si</lechuga>
+        <tomate>No</tomate>
+        <bacon>Si</bacon>
+        <cebolla>crujiente</cebolla>
+        <pepinillos>No</pepinillos>
+        <guacamole>No</guacamole>
+        <huevo>No</huevo>
+        <salsa>barbacoa</salsa>
+        <precio>17</precio>
+    </hamburguesa>
+    <hamburguesa>
+        <nombre>Keep the faith</nombre>
+        <pan>Pan brioche</pan>
+        <tipocarne>lomo de cerdo</tipocarne>
+        <queso>gouda ahumado</queso>
+        <lechuga>No</lechuga>
+        <tomate>No</tomate>
+        <bacon>Si</bacon>
+        <cebolla>caramelizada</cebolla>
+        <pepinillos>Si</pepinillos>
+        <guacamole>No</guacamole>
+        <huevo>Si</huevo>
+        <salsa>mostaza</salsa>
+        <precio>16.5</precio>
+    </hamburguesa>
+    <hamburguesa>
+        <nombre>Everlong</nombre>
+        <pan>Pan de semillas</pan>
+        <tipocarne>quinoa y espinacas</tipocarne>
+        <queso>vegano</queso>
+        <lechuga>Si</lechuga>
+        <tomate>No</tomate>
+        <bacon>No</bacon>
+        <cebolla>cruda</cebolla>
+        <pepinillos>Si</pepinillos>
+        <guacamole>No</guacamole>
+        <huevo>No</huevo>
+        <salsa>mostaza</salsa>
+        <precio>14.5</precio>
+    </hamburguesa>
+    <hamburguesa>
+        <nombre>Rami Malek</nombre>
+        <pan>Pan de cristal</pan>
+        <tipocarne>garbanzos y tofu</tipocarne>
+        <queso>vegano</queso>
+        <lechuga>Si</lechuga>
+        <tomate>No</tomate>
+        <bacon>No</bacon>
+        <cebolla>caramelizada</cebolla>
+        <pepinillos>No</pepinillos>
+        <guacamole>No</guacamole>
+        <huevo>No</huevo>
+        <salsa>mostaza y miel</salsa>
+        <precio>14.5</precio>
+    </hamburguesa>
+</carta>

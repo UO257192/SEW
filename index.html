@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amborgeseria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="SEW,html5,css,php,js,hamburgueseria">
+    <script src="JS/Mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZbzNBeW_Amosf2F9-wE1Oxbo46HdeIzI&callback=mapa.initMap" async defer></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="JS/jquery-3.3.1.js"></script>
+    <script src="JS/Navigator.js"></script>
+    <script src="JS/Carrito.js"></script>
+    <script src="JS/Carta.js"></script>
+    <script src="JS/AjaxInicioSesion.js"></script>
+    <script src="JS/AjaxRegistro.js"></script>
+    <script src="JS/AjaxCreacion.js"></script>
+    <script src="JS/Peliculas.js"></script>
+    <script src="JS/Cambio.js"></script>
+    <link href="CSS/Principal.css" rel="stylesheet" />
+</head>
+<body onload="cambiador.cambiar();carta.cargarCarta()">
+    <header>
+        <h1>Amborgeseria</h1>
+        <nav id="navbar">
+            <button id="carta" onclick="carta.cargarCarta();nav.carta()">Carta</button>
+            <button id="creaciones" onclick="nav.crear()">Creaciones</button>
+            <button id="crear" onclick="nav.creaciones()">Crea tu amborgesa</button>
+            <button id="carrito" onclick="carrito.mostrar()">Carrito</button>
+            <button onclick="nav.mostrarDatosUser()">Usuario</button>
+        </nav>
+    </header>
+    <div id="div1"></div>
+    <div id="map"></div>
+    <div id="user"></div>
+    <div id="aux">
+        <div class='welcome'>
+            <h2>¡BIENVENIDO A LA AMBORGESERIA!</h2><button  onclick='nav.login()'>Inicia sesion >></button>
+        </div>
+    </div>
+</body>
+</html>

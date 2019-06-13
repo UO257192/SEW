@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="carta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hamburguesa"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hamburguesa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="pan"/>
+        <xs:element ref="tipocarne"/>
+        <xs:element ref="queso"/>
+        <xs:element ref="lechuga"/>
+        <xs:element ref="tomate"/>
+        <xs:element ref="bacon"/>
+        <xs:element ref="cebolla"/>
+        <xs:element ref="pepinillos"/>
+        <xs:element ref="guacamole"/>
+        <xs:element ref="huevo"/>
+        <xs:element ref="salsa"/>
+        <xs:element ref="precio"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:NCName"/>
+  <xs:element name="pan" type="xs:NCName"/>
+  <xs:element name="tipocarne" type="xs:NCName"/>
+  <xs:element name="queso" type="xs:NCName"/>
+  <xs:element name="lechuga" type="xs:NCName"/>
+  <xs:element name="tomate" type="xs:NCName"/>
+  <xs:element name="bacon" type="xs:NCName"/>
+  <xs:element name="cebolla" type="xs:NCName"/>
+  <xs:element name="pepinillos" type="xs:NCName"/>
+  <xs:element name="guacamole" type="xs:NCName"/>
+  <xs:element name="huevo" type="xs:NCName"/>
+  <xs:element name="salsa" type="xs:NCName"/>
+  <xs:element name="precio" type="xs:integer"/>
+</xs:schema>
