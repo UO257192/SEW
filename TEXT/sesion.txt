@@ -1,9 +1,0 @@
-<div class="form">
-    <h2>Iniciar sesión</h2>
-    <form name="formularioSesion" onsubmit="inicioajax.enviarDatos(); return false" class="login-form" autocomplete="off">
-        <input type="text" name="prueba1" placeholder="Nombre de usuario"/>
-        <input type="password" name="prueba2" placeholder="Contraseña"/>
-        <input class="subbt" type="submit" value="Iniciar sesión"></input>
-    </form>
-    <button class="boton" onclick="nav.registro()">¿No tienes cuenta? Registrate aqui.</button>
-</div>
